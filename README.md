@@ -65,9 +65,9 @@ For maximum effectiveness, use a harness CLI that supports **subagent dispatch**
 1. Clone or copy this skill into your project:
 
    ```bash
-   # Copy the skill directory into your repo
-   cp -r skills/owner-review /path/to/your-repo/.claude/skills/
-   # Or wherever your CLI loads skills from
+   # Copy the skill directory to ~/.claude/skills/
+   mkdir -p ~/.claude/skills/
+   cp -r skills/owner-review ~/.claude/skills/
    ```
 
 2. Write your spec or plan document.
@@ -196,7 +196,8 @@ Agent 不是罗列文件 —— 它以 **功能和逻辑流** 为维度进行思
 1. 将此 skill 复制到你的项目中：
 
    ```bash
-   cp -r skills/owner-review /path/to/your-repo/.claude/skills/
+   mkdir -p ~/.claude/skills/
+   cp -r skills/owner-review ~/.claude/skills/
    ```
 
 2. 编写你的 spec 或 plan 文档。
