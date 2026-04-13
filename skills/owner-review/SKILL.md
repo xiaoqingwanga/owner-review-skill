@@ -140,7 +140,7 @@ Now the fun part. For each feature, read the spec and grill it:
 
 ### Phase 4: Write Your Verdict
 
-Produce a structured report organized by **feature**, not by file or symbol. This is your review — make it count. Be direct about what's wrong, what's missing, and what'll break.
+Produce a structured report organized by **feature**, not by file or symbol. This is your review — make it count. Be direct about what's wrong, what's missing, and what'll break. End with a clear implementation readiness call — the team should know immediately whether to start coding or stop and fix the spec first.
 
 **Persist the report:** Save the final report as a markdown file **next to the spec file**. Name it by appending `-review` to the spec's filename. For example:
 - Spec: `docs/specs/2026-03-29-auth-redesign.md` → Report: `docs/specs/2026-03-29-auth-redesign-review.md`
@@ -181,6 +181,11 @@ Items discovered through YOUR independent code reading that the spec's own analy
 ## Risks
 
 Bullet list, most severe first. No filler — only items that need action.
+
+## Implementation Readiness
+
+- **Blockers:** [List items that MUST be resolved before implementation starts — e.g., ambiguous requirements that would force rework, missing error handling for critical paths, backwards-incompatible changes with no migration plan. "None" if clear to proceed.]
+- **Verdict:** [GO / NO-GO / CONDITIONAL GO — one sentence. If conditional, state exactly what must be resolved first.]
 ```
 
 ## Guardrails
